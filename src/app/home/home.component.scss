@@ -1,0 +1,100 @@
+@import '../../scss/media';
+@import '../../scss/config';
+
+// home section
+.home {
+    position: relative;
+    top:10%;
+}
+.overlay {
+    opacity: 0.8;
+}
+// slider image
+img {
+    height:100vh;
+    background-position: center;
+    background-size: cover;
+    margin-top: 151px;
+}
+.container-fluid {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+// video section
+.video {
+    text-align: center;
+    padding:40px;
+    margin:40px;
+}
+#myVideo {
+    width :620px;
+    height:320px;
+    text-align: center;
+}
+// line braek
+hr{
+    border: 0.3px solid rgb(214, 155, 201);
+}
+// mobile device
+@include mediaSm {
+    // slider content
+    .d-none {
+        display: block !important;
+    }
+    .video {
+        text-align: center;
+        padding:25px;
+        margin:25px;
+        justify-content: center;
+    }
+    #myVideo {
+        width :230px;
+        height:130px;
+        text-align: center;
+    }
+    .slider-content h5 {
+        font-size: $tablet-font;
+    }
+    .slider-content p {
+        font-size: $mobile-font;
+    }
+}
+// tablet device
+@include mediaMd {
+    // slider content
+    .d-none {
+        display: block !important;
+    }
+    .video {
+        text-align: center;
+        padding:30px;
+        margin:30px;
+    }
+    #myVideo {
+        width :340px;
+        height:200px;
+        text-align: center;
+    }
+    .slider-content h5 {
+        font-size: $laptop-font;
+    }
+    .slider-content p {
+        font-size: $tablet-font;
+    }
+}
+@include mediaLg {
+    .slider-content h5 {
+        font-size: $large-font;
+    }
+    .slider-content p {
+        font-size: $laptop-font;
+    }
+}
+@include mediaXl {
+    .slider-content h5 {
+        font-size: 28px;
+    }
+    .slider-content p {
+        font-size: $large-font;
+    }
+}

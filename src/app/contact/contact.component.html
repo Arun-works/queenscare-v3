@@ -1,0 +1,54 @@
+<section class = "contactpage" id = "contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form [formGroup] = "forms" #contactform = "ngForm" (ngSubmit) = "onSubmit(contactform.form)">
+          <div class="formgroup">
+            <label>Name:</label>
+            <input type = "text" class = "form-control" formControlName = "name"
+             #name placeholder="Enter Your Name">
+            <div *ngIf = "forms.controls['name'].hasError('required') && forms.controls['name'].hasError('touched')" class = "alert alert-danger">
+              Name Field is Required
+            </div>
+            <div *ngIf = "forms.controls['name'].hasError('minlength')" class = "alert alert-danger">
+              Name Field must be have 5 characters
+            </div>
+            <div *ngIf = "forms.controls['name'].hasError('maxlength')" class = "alert alert-danger">
+              Name Field exceed 15 characters
+            </div>
+          </div><br>
+        
+          <div class="formgroup">
+              <label>Email:</label>
+              <input type = "text" class = "form-control email" formControlName = "email" 
+               placeholder="Enter Your Email">
+        
+              <div *ngIf = "forms.controls['email'].hasError('required') && forms.controls['email'].hasError('touched')" class = "alert alert-danger">
+                  Email is Required
+              </div>
+              <div *ngIf = "forms.controls['email'].hasError('pattern')" class = "alert alert-danger">
+                 Please Enter Correct Email
+                </div>
+          </div><br>
+  
+          <div class="formgroup">
+              <label>Mobile No:</label>
+              <input type = "text" class = "form-control" formControlName = "mobile"
+              placeholder="Enter Your Mobile Number">      
+              <div *ngIf = "forms.controls['mobile'].hasError('required') && forms.controls['mobile'].hasError('touched')" class = "alert alert-danger">
+                  Mobile number is Required
+              </div>
+              <div *ngIf = "forms.controls['mobile'].hasError('pattern')" class = "alert alert-danger">
+                Please Enter Correct Mobile number
+               </div>
+          </div><br>
+  
+          <div class="formgroup">
+              <label>Message:</label>
+              <textarea class = "form-control" formControlName = "message" rows = "5"></textarea>
+          </div><br>
+          <button type = "submit" [disabled] = "!forms.valid" class = "btn">Send</button>
+      </form>
+    </div>  
+  </section>
+  <hr>
+  

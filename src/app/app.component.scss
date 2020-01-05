@@ -1,0 +1,83 @@
+@import '../scss/media';
+@import '../scss/config';
+
+.top {
+    position: fixed;
+    top:90%;
+    left:94%;
+    background-color: white;
+    border-radius: 50%;
+    @include easeOut;
+}
+.top a {
+    color:$primary-color;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 20px;
+}
+// media queries
+// mobile
+@include mediaSm {
+    .top {
+        position: fixed;
+        top:89%;
+        left:85%;
+        background-color: white;
+        border-radius: 50%;
+        @include easeOut;
+    }
+    .top a {
+        color:$primary-color;
+        text-decoration: none;
+        font-size: 16px;
+        padding: 15px;
+    }
+}
+@include mediaMd {
+    .top {
+        position: fixed;
+        top:88%;
+        left:87%;
+        background-color: white;
+        border-radius: 50%;
+        @include easeOut;
+    }
+    .top a {
+        color:$primary-color;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 18px;
+    }
+}
+@include mediaLg {
+    .top {
+        position: fixed;
+        top:88%;
+        left:90%;
+        background-color: white;
+        border-radius: 50%;
+        @include easeOut;
+    }
+    .top a {
+        color:$primary-color;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 20px;
+    }
+}
+@include mediaXl{
+    .top {
+        position: fixed;
+        top:85%;
+        left:94%;
+        background-color: white;
+        border-radius: 50%;
+        @include easeOut;
+    }
+    .top a {
+        color:$primary-color;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 20px;
+    }
+}

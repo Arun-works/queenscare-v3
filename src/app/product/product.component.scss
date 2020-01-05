@@ -1,0 +1,339 @@
+@import '../../scss/media';
+@import '../../scss/config';
+// product page
+#product {
+    width:100%;
+    padding-top:80px;
+    background-color: $primary-color;
+}
+hr{
+    border: 0.3px solid rgb(214, 155, 201);
+    height: 0.3px;
+}
+
+// product1
+#product1{
+    padding:40px 20px 0px 20px;
+    display: flow-root;
+    margin-top: 100px;
+}
+.pic_1{ 
+    width:45%;
+    float: left;
+    margin-bottom:40px;
+}
+.content_1{
+    float: right;
+    width:45%;
+    height:auto;
+    margin-top:80px;
+    color:white;
+    color:white;
+    // font-size: 26px;
+    font-family: consolas;
+}
+// product2
+#product2{
+    padding:80px 20px 0px 20px;
+    display: flow-root;
+}
+.pic_2 {
+    width:45%;
+    float: right;
+    margin-bottom:40px;
+}
+.content_2{
+    float: left;
+    width:45%;
+    height:auto;
+    margin-top:80px;
+    color:white;
+    // font-size: 26px;
+    font-family: consolas;
+}
+// product3
+#product3{
+    padding:80px 20px 0px 20px;
+    display: flow-root;
+}
+.pic_3{ 
+    width:45%;
+    float: left;
+    margin-bottom:40px;
+}
+.content_3{
+    float: right;
+    width:45%;
+    height:auto;
+    margin-top:30px;
+    color:white;
+    // font-size: 26px;
+    font-family: consolas;
+}
+// bootsrap container-fluid overwrite
+.container-fluid {
+    padding-right: 30px !important;
+    padding-left: 30px !important;
+}
+
+// media queries
+@include mediaSm {
+#product {
+    width:100%;
+    padding-top:20px;
+    // background-image: linear-gradient(to right, rgb(238, 74, 169),rgb(199, 39, 119));
+}
+// product1
+#product1{
+    padding:60px 20px 0px 20px;
+    margin-top: 105px;
+}
+.pic_1{ 
+    width:100%;
+    height:auto;
+    float: none;
+    margin-bottom:40px;
+}
+.content_1{
+    text-align: center;
+    float: none;
+    width:100%;
+    margin-top:40px;
+    margin-bottom:40px;
+    height:auto;
+    color:white;
+    // font-size: 18px;
+    font-family: consolas;
+    
+}
+.content_1 h4 {
+    font-size: $laptop-font;
+    font-weight: bold;
+}
+.content_1 p {
+    font-size: $mobile-font;
+}
+// product2
+#product2{
+    padding:30px 20px 0px 20px;
+}
+.pic_2{ 
+    width:100%;
+    height:auto;
+    float: none;
+    margin-bottom:40px;
+    margin-top:40px;
+}
+.content_2{
+    text-align: center;
+    float: none;
+    width:100%;
+    margin-top:40px;
+    margin-bottom:40px;
+    height:auto;
+    color:white;
+    font-size: 18px;
+    font-family: consolas;
+}
+.content_2 h4 {
+    font-size: $laptop-font;
+    font-weight: bold;
+}
+.content_2 p {
+    font-size: $mobile-font;
+}
+// product3
+#product3{
+    padding:30px 20px 0px 20px;
+}
+.pic_3{ 
+    width:100%;
+    height:auto;
+    float: none;
+    margin-bottom:40px;
+    margin-top:40px;
+}
+.content_3{
+    text-align: center;
+    float: none;
+    width:100%;
+    margin-top:40px;
+    margin-bottom:40px;
+    height:auto;
+    color:white;
+    font-size: 18px;
+    font-family: consolas;
+}
+.content_3 h4 {
+    font-size: $laptop-font;
+    font-weight: bold;
+}
+.content_3 p {
+    font-size: $mobile-font;
+}
+}
+// tablet
+@include mediaMd {
+// product1
+#product1{
+    padding:30px 20px 0px 20px;
+}
+.pic_1{ 
+    width:100%;
+    height:auto;
+    float: none;
+    margin-bottom:40px;
+}
+.content_1{
+    text-align: center;
+    float: none;
+    width:100%;
+    margin-top:40px;
+    margin-bottom:40px;
+    height:auto;
+    color:white;
+    font-size: 20px;
+    font-family: consolas;
+}
+.content_1 h4 {
+    font-size: $large-font;
+    font-weight: bold;
+}
+.content_1 p {
+    font-size: $tablet-font;
+}
+// product2
+#product2{
+    padding:30px 20px 0px 20px;
+}
+.pic_2{ 
+    width:100%;
+    height:auto;
+    float: none;
+    margin-bottom:40px;
+    margin-top:40px;
+}
+.content_2{
+    text-align: center;
+    float: none;
+    width:100%;
+    margin-top:40px;
+    margin-bottom:40px;
+    height:auto;
+    color:white;
+    font-size: 20px;
+    font-family: consolas;
+}
+.content_2 h4 {
+    font-size: $large-font;
+    font-weight: bold;
+}
+.content_2 p {
+    font-size: $tablet-font;
+}
+// product3
+#product3{
+    padding:30px 20px 0px 20px;
+}
+.pic_3{ 
+    width:100%;
+    height:auto;
+    float: none;
+    margin-bottom:40px;
+    margin-top:40px;
+}
+.content_3{
+    text-align: center;
+    float: none;
+    width:100%;
+    margin-top:40px;
+    margin-bottom:40px;
+    height:auto;
+    color:white;
+    font-size: 20px;
+    font-family: consolas;
+}
+.content_3 h4 {
+    font-size: $large-font;
+    font-weight: bold;
+}
+.content_3 p {
+    font-size: $tablet-font;
+}
+}
+// laptops
+@include mediaLg {
+    .content_1{
+        float: right;
+        width:45%;
+        height:auto;
+        margin-top:0px;
+        color:white;
+        // font-size: 24px;
+        font-family: consolas;
+    }
+    .content_1 h4 {
+        font-size: 26px;
+        font-weight: bold;
+    }
+    .content_1 p {
+        font-size: $laptop-font;
+    }
+    .content_2 h4 {
+        font-size: 26px;
+        font-weight: bold;
+    }
+    .content_2 p {
+        font-size: $laptop-font;
+    }
+    .content_3 h4 {
+        font-size:26px;
+        font-weight: bold;
+    }
+    .content_3 p {
+        font-size: $laptop-font;
+    }
+    .content_2{
+        float: left;
+        width:45%;
+        height:auto;
+        margin-top:0px;
+        color:white;
+        // font-size: 24px;
+        font-family: consolas;
+    }
+    .content_3{
+        float: right;
+        width:45%;
+        height:auto;
+        margin-top:0px;
+        color:white;
+        // font-size: 24px;
+        font-family: consolas;
+    }
+
+}
+@include mediaXl {
+    .content_1 h4 {
+        font-size: 28px;
+        font-weight: bold;
+    }
+    .content_1 p {
+        font-size: $large-font;
+    }
+    .content_2 h4 {
+        font-size: 28px;
+        font-weight: bold;
+    }
+    .content_2 p {
+        font-size: $large-font;
+    }
+    .content_3 h4 {
+        font-size:28px;
+        font-weight: bold;
+    }
+    .content_3 p {
+        font-size: $large-font;
+    }
+}
+

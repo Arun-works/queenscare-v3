@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+// import bootstrap
+@import './scss/media';
+@import './scss/config';
+
+@import '~bootstrap/scss/bootstrap.scss';
+
+body {
+   background-color: $primary-color;
+}
+html {
+    scroll-behavior: smooth;
+}  
+

@@ -1,0 +1,115 @@
+@import '../../scss/media';
+@import '../../scss/config';
+#about {
+    padding:160px 0 0px 0;
+    // display: inline-block;
+}
+.about-content h2,.iso-logo h2, .about-founder h2{
+    color: white;
+    font-size: 24px;
+    font-family: consolas;
+    padding:10px;
+    line-height: 2;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.about-content p, .about-founder p {
+    color: white;
+    font-size: 18px;
+    font-family: consolas;
+    padding:10px;
+    line-height: 2;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+.iso-logo{
+    padding-top: 20px;
+    text-align: center;
+}
+.iso-logo img {
+    width: 25%;
+    height: 25%;
+    padding-top: 20px; 
+}
+.about-founder{
+    padding: 60px 0 60px 0;
+}
+.founder-img{
+    text-align: center;
+}
+.founder-img img{
+    border-radius: 50%;
+    text-align: center;
+    width: 40%;
+    height: 40%;
+}
+// line break
+hr{
+    border: 0.3px solid rgb(214, 155, 201);
+    height: 1px;
+}
+// media queries
+@include mediaSm{
+    .founder-img img{
+        border-radius: 50%;
+        text-align: center;
+        width: 60%;
+        height: 60%;
+    }
+    .about-content h2, .about-founder h2 {
+        font-size: $laptop-font;
+        font-weight: bold;
+    }
+    .about-content p, .about-founder p {
+        font-size: $mobile-font;
+    }
+    .iso-logo h2{
+        font-size: $laptop-font;
+        font-weight: bold;
+    }
+}
+@include mediaMd{
+    .founder-img img{
+        border-radius: 50%;
+        text-align: center;
+        width: 70%;
+        height: 70%;
+    }
+    .about-content h2, .about-founder h2 {
+        font-size: 26px;
+        font-weight: bold;
+    }
+    .about-content p, .about-founder p {
+        font-size: $tablet-font;
+    }
+    .iso-logo h2{
+        font-size: 26px;
+        font-weight: bold;
+    }
+}
+@include mediaLg {
+    .about-content h2, .about-founder h2 {
+        font-size: 28px;
+        font-weight: bold;
+    }
+    .about-content p, .about-founder p {
+        font-size: $laptop-font;
+    }
+    .iso-logo h2{
+        font-size: 28px;
+        font-weight: bold;
+    }
+}
+@include mediaXl {
+    .about-content h2, .about-founder h2 {
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .about-content p, .about-founder p {
+        font-size: $large-font;
+    }
+    .iso-logo h2{
+        font-size: 30px;
+        font-weight: bold;
+    }
+}

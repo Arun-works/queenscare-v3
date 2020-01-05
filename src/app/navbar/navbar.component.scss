@@ -1,0 +1,168 @@
+@import '../../scss/media';
+@import '../../scss/config';
+
+.bg-light {
+    background-color: $primary-color !important;
+}
+//navbar menu
+.menu-btn{
+    top:15px;
+    right:15px;    
+    position: absolute;
+    z-index:3;
+    cursor: pointer;
+    @include easeOut;
+    //hamburger menu lines
+    .btn-line{
+        width:25px;
+        height:2.5px;
+        margin: 0 0 5px 0;
+        @include easeOut;
+    }
+//normal menu
+&.navbar-toggler.collapsed{
+    transform: rotate(360deg);
+    .btn-line{
+        &:nth-child(1){
+            transform: rotate(0) ;
+            background-color: #fff;
+        }
+        &:nth-child(2){
+            opacity: 0.9;
+            background-color: #fff;
+        }
+        &:nth-child(3){
+            transform: rotate(0) ;
+            background-color: #fff;
+        }
+    }
+}
+//rotate x symbol
+    &.navbar-toggler {
+        outline: none;    
+        .btn-line{
+            &:nth-child(1){
+                transform: rotate(46deg) translate(5px, 4.5px);
+                background-color:  white;
+            }
+            &:nth-child(2){
+                opacity: 0;
+            }
+            &:nth-child(3){
+                transform : rotate(-46deg) translate(7px, -6px);
+                background-color: white;
+            }
+        }
+    }
+}
+//button outline none
+button{
+    border:none;
+}
+.title{
+    margin: 0 auto;
+}
+.nav-item a{
+    color:white !important;
+    // padding: 10px;
+}
+.nav-item a:hover {
+    color:rgb(253, 253, 70) !important;
+    transform: rotate(15deg);
+    @include easeOut;
+}
+.title h4,.title h2 {
+    font-family: consolas;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 1;
+}
+
+.brand_all {
+    text-align: center;
+    color:white;
+    font-family: consolas;
+}
+
+// mobile device
+@include mediaSm {
+    .nav-item a{
+        color:white !important;
+        padding-left:0px;
+        padding-right:0px;
+        text-align: center;
+    }
+    .title h4{
+        font-size: $tablet-font;
+    }
+    .title h2{
+        font-size: $large-font;
+    }
+//navbar menu
+.menu-btn{
+    top:15px;
+    right:0px;    
+    position: relative;
+}
+}
+// tablet
+@include mediaMd{ 
+    .nav-item a{
+        color:white !important;
+        padding-left:0px;
+        padding-right:0px;
+        text-align: center;
+        font-size: $tablet-font;
+    }
+    .title h4{
+        font-size: $tablet-font;
+    }
+    .title h2{
+        font-size: $large-font;
+    }
+//navbar menu
+.menu-btn{
+    top:15px;
+    right:0px;    
+    position: relative;
+}
+}
+// laptops
+@include mediaLg{
+    .nav-item a{
+        color:white !important;
+        padding-left:20px;
+        padding-right:0px;
+        text-align: center;
+        font-size: $laptop-font;
+        letter-spacing: 3px;
+    }
+    .title h4{
+        font-size: $laptop-font;
+    }
+    .title h2{
+        font-size: $large-font;
+    }
+    //navbar menu
+.menu-btn{
+    top:15px;
+    right:0px;    
+    position: relative;
+}
+}
+@include mediaXl{
+    .nav-item a{
+        color:white !important;
+        padding-left:20px;
+        padding-right:0px;
+        text-align: center;
+        font-size: $laptop-font;
+        letter-spacing: 3px;
+    }
+    .title h4{
+        font-size: $large-font;
+    }
+    .title h2{
+        font-size: 28px;
+    }
+}
