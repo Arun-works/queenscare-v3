@@ -23,7 +23,7 @@
     "@angular/router": "~8.2.14",
     "bootstrap": "^4.4.1",
     "core-js": "^2.6.11",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "font-awesome": "^4.7.0",
     "jquery": "^3.4.1",
     "rxjs": "~6.5.4",
